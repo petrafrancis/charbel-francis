@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-cream: #FBF8F3;
+  --bg-blue-pale: #E8F1F5;
+  --text-primary: #2C2C2C;
+  --text-secondary: #5B5B5B;
+  --accent-blue: #8B9DC3;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-blue-pale) 100%);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-feature-settings: "kern", "liga", "calt"; 
+}
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--accent-blue);
+  color: white;
+}
+
+/* RTL specific adjustments */
+[dir="rtl"] {
+  font-family: 'Noto Naskh Arabic', serif;
+}
+
+[dir="rtl"] .font-serif {
+  font-family: 'Noto Naskh Arabic', serif;
+}
+
+[dir="rtl"] .font-sans {
+  font-family: 'Noto Naskh Arabic', serif;
+}
