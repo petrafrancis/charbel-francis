@@ -5,7 +5,7 @@ export function BiographySection() {
   const firstLetter = language === 'ar' ? 'و' : 'B';
   // Author image URL - replace with actual author image
   const authorImageUrl = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&q=80';
-  
+
   return (
     <section className="relative max-w-3xl mx-auto px-8 py-12">
       <div className="absolute -left-4 top-0 bottom-0 w-px bg-[#8b7355] opacity-20 hidden md:block"></div>
@@ -62,9 +62,9 @@ export function BiographySection() {
         <div className="relative">
           <div className={`flex items-center gap-3 ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
             {language === 'ar' && (
-              <img 
-                src="/quill.png" 
-                alt="Quill" 
+              <img
+                src="/quill.png"
+                alt="Quill"
                 className="w-8 h-8 object-contain opacity-80"
               />
             )}
@@ -76,9 +76,9 @@ export function BiographySection() {
               {t('author_name')}
             </p>
             {language === 'en' && (
-              <img 
-                src="/quill.png" 
-                alt="Quill" 
+              <img
+                src="/quill.png"
+                alt="Quill"
                 className="w-8 h-8 object-contain opacity-80"
               />
             )}
