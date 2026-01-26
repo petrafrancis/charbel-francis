@@ -1,5 +1,7 @@
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 export function ManuscriptHeader() {
+  const { t } = useLanguage();
   return (
     <header className="relative py-20 px-4 text-center overflow-hidden">
       {/* Decorative Corner Borders */}
@@ -12,17 +14,17 @@ export function ManuscriptHeader() {
 
       <div className="relative z-10 max-w-4xl mx-auto">
         <div className="mb-4 text-[#8b2e2e] font-ornamental tracking-widest text-sm uppercase">
-          Est. MDCCCXCII
+          {t('manuscript_subtitle')}
         </div>
 
         <h1 className="text-6xl md:text-8xl font-ornamental text-[#4a3f35] mb-6 tracking-wide drop-shadow-sm">
-          Arthur <span className="text-[#8b2e2e]">V.</span> Blackwood
+          {t('author_name')}
         </h1>
 
         <div className="flex items-center justify-center gap-4 mb-8">
           <div className="h-px bg-[#8b7355] w-24 opacity-50"></div>
           <p className="text-xl md:text-2xl italic text-[#6d5a43] font-manuscript">
-            Purveyor of Fine Gothic Mysteries & Eldritch Tales
+            {t('author_title')}
           </p>
           <div className="h-px bg-[#8b7355] w-24 opacity-50"></div>
         </div>

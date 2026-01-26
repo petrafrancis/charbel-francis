@@ -4,6 +4,7 @@ import { ManuscriptHeader } from '../components/ManuscriptHeader';
 import { BiographySection } from '../components/BiographySection';
 import { BooksSection } from '../components/BooksSection';
 import { UpcomingReleases } from '../components/UpcomingReleases';
+import { EventsPreview } from '../components/EventsPreview';
 import { OrnamentalDivider } from '../components/OrnamentalDivider';
 import { LifeJourneyTimeline } from '../components/LifeJourneyTimeline';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -36,35 +37,14 @@ export function AuthorPage() {
 
           <BooksSection />
 
+          <OrnamentalDivider variant="complex" />
+
+          <EventsPreview />
+
           <OrnamentalDivider variant="end" />
 
-          {/* Footer with Events Link */}
+          {/* Footer */}
           <footer className="text-center text-[#6d5a43] text-sm font-manuscript mt-8 opacity-70">
-            <div className="mb-4">
-              <button
-                onClick={() => navigate('/events')}
-                className="inline-flex items-center gap-2 text-[#8b2e2e] hover:text-[#6b2323] transition-colors border-b border-[#8b2e2e] border-opacity-50 hover:border-opacity-100 pb-1">
-
-                <span>
-                  {language === 'en' ?
-                  'View Events & Appearances' :
-                  'عرض الفعاليات والمشاركات'}
-                </span>
-                <svg
-                  className="w-3 h-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24">
-
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7">
-                  </path>
-                </svg>
-              </button>
-            </div>
             <p>
               &copy; MDCCCCXXXVIII Arthur V. Blackwood. {t('rights_reserved')}
             </p>

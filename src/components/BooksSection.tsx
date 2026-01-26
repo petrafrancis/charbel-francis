@@ -3,95 +3,78 @@ import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 export interface BookData {
   id: string;
-  title: string;
+  titleKey: string;
   year: string;
   color: 'red' | 'blue' | 'brown' | 'green';
-  description: string;
-  fullSummary: string;
-  genre: string;
+  descriptionKey: string;
+  summaryKey: string;
+  genreKey: string;
   releaseDate: string;
+  imageUrl: string;
   isFeatured?: boolean;
   isUpcoming?: boolean;
 }
-export const booksData: BookData[] = [
-{
-  id: 'whispering-gallery',
-  title: 'The Whispering Gallery',
-  year: 'MDCCCCXXIV',
-  color: 'red',
-  description:
-  'A tale of voices trapped within the walls of an ancient manor.',
-  fullSummary:
-  'In the crumbling estate of Blackwood Manor, the walls do not just have ears—they have voices. When young architect Thomas arrives to oversee renovations, he discovers that the whispering gallery in the great hall is a conduit to the past, trapping the souls of those who died within its confines. As the whispers grow louder, Thomas must solve the mystery of the manor before he becomes another voice in the chorus.',
-  genre: 'Gothic Horror',
-  releaseDate: 'October 31, 1924'
-},
-{
-  id: 'lanterns-fog',
-  title: 'Lanterns in the Fog',
-  year: 'MDCCCCXXVII',
-  color: 'blue',
-  description: 'Three sailors vanish, leaving only their lanterns burning.',
-  fullSummary:
-  'On a mist-shrouded night in the port of Innsmouth, three seasoned sailors vanish from their docked ship without a trace. The only clue left behind is their lanterns, still burning with an unnatural blue flame. Investigator Elias Thorne delves into the local legends of the Deep Ones and discovers a pact made generations ago that is now coming due.',
-  genre: 'Maritime Mystery',
-  releaseDate: 'November 15, 1927'
-},
-{
-  id: 'alchemists-daughter',
-  title: "The Alchemist's Daughter",
-  year: 'MDCCCCXXXI',
-  color: 'green',
-  description: 'Alchemy and obsession collide in 17th century Prague.',
-  fullSummary:
-  "In the winding streets of 17th century Prague, the daughter of a renowned alchemist discovers her father's true goal was not gold, but immortality. As she uncovers his dark experiments, she realizes she is the final ingredient in his magnum opus. A tale of betrayal, magic, and the high price of eternal life.",
-  genre: 'Historical Fantasy',
-  releaseDate: 'September 23, 1931',
-  isFeatured: true
-},
-{
-  id: 'echoes-void',
-  title: 'Echoes of the Void',
-  year: 'MDCCCCXXXV',
-  color: 'brown',
-  description:
-  'A collection of short stories exploring the spaces between worlds.',
-  fullSummary:
-  'A chilling anthology of short stories that explore the thin veil between our reality and the void beyond. From a mirror that reflects a different room to a clock that counts backwards to the end of time, these tales will leave you questioning the nature of existence itself.',
-  genre: 'Cosmic Horror Anthology',
-  releaseDate: 'December 12, 1935'
-},
-{
-  id: 'clockwork-heart',
-  title: 'The Clockwork Heart',
-  year: 'MDCCCCXXXVIII',
-  color: 'brown',
-  description: 'A gothic romance interwoven with mechanical horror.',
-  fullSummary:
-  'In the gas-lit streets of Victorian London, a watchmaker discovers a mechanism that can beat forever—but at a terrible cost. When his beloved falls gravely ill, he must choose between her mortality and a clockwork existence. A gothic romance interwoven with mechanical horror, exploring the boundary between the soul and the machine. As gears turn and springs wind, the question remains: can love survive when the heart no longer beats with blood, but with brass and steam?',
-  genre: 'Gothic Romance',
-  releaseDate: 'Autumn 1938',
-  isUpcoming: true
-}];
 
-interface BookProps extends BookData {
+export function getBooksData(t: (key: string) => string, language: 'en' | 'ar'): BookData[] {
+  return [
+
+
+    {
+      id: 'alchemists-daughter',
+      titleKey: 'book_alchemists_daughter_title',
+      year: 'MDCCCCXXXI',
+      color: 'green',
+      descriptionKey: 'book_alchemists_daughter_desc',
+      summaryKey: 'book_alchemists_daughter_summary',
+      genreKey: 'book_alchemists_daughter_genre',
+      releaseDate: language === 'ar' ? '23 سبتمبر 1931' : 'September 23, 1931',
+      imageUrl: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=600&fit=crop&q=80',
+      isFeatured: true
+    },
+    {
+      id: 'echoes-void',
+      titleKey: 'book_echoes_void_title',
+      year: 'MDCCCCXXXV',
+      color: 'brown',
+      descriptionKey: 'book_echoes_void_desc',
+      summaryKey: 'book_echoes_void_summary',
+      genreKey: 'book_echoes_void_genre',
+      releaseDate: language === 'ar' ? '12 ديسمبر 1935' : 'December 12, 1935',
+      imageUrl: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&h=600&fit=crop&q=80'
+    },
+    {
+      id: 'clockwork-heart',
+      titleKey: 'book_clockwork_heart_title',
+      year: 'MDCCCCXXXVIII',
+      color: 'brown',
+      descriptionKey: 'book_clockwork_heart_desc',
+      summaryKey: 'book_clockwork_heart_summary',
+      genreKey: 'book_clockwork_heart_genre',
+      releaseDate: language === 'ar' ? 'خريف 1938' : 'Autumn 1938',
+      imageUrl: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=600&fit=crop&q=80',
+      isUpcoming: true
+    }
+  ];
+}
+
+interface BookProps {
+  id: string;
+  titleKey: string;
+  year: string;
+  descriptionKey: string;
+  imageUrl: string;
+  isFeatured?: boolean;
   onClick: () => void;
 }
 function Book({
-  title,
+  titleKey,
   year,
-  color,
-  description,
+  descriptionKey,
+  imageUrl,
   isFeatured,
   onClick
 }: BookProps) {
   const { t } = useLanguage();
-  const colorMap = {
-    red: 'from-[#5c1a1a] to-[#3a0e0e]',
-    blue: 'from-[#1a2f5c] to-[#0e1a3a]',
-    brown: 'from-[#5c401a] to-[#3a280e]',
-    green: 'from-[#1a5c2f] to-[#0e3a1c]'
-  };
   return (
     <div
       onClick={onClick}
@@ -99,7 +82,7 @@ function Book({
 
       {/* Featured Badge */}
       {isFeatured &&
-      <div className="absolute -top-4 -right-4 z-30 animate-bounce-slow">
+        <div className="absolute -top-4 -right-4 z-30 animate-bounce-slow">
           <div className="bg-[#d4af37] text-[#3a0e0e] text-xs font-bold px-3 py-1 shadow-lg border border-[#8b7355] transform rotate-12 flex flex-col items-center">
             <span className="uppercase tracking-wider">
               {t('featured_event')}
@@ -110,53 +93,55 @@ function Book({
         </div>
       }
 
-      {/* Book Cover */}
+      {/* Book Cover with Frame */}
       <div
-        className={`relative w-48 h-72 rounded-r-md transition-transform duration-500 transform group-hover:-translate-y-2 group-hover:rotate-1 ${isFeatured ? 'shadow-[0_0_25px_rgba(212,175,55,0.4)] ring-2 ring-[#d4af37]/30' : 'shadow-2xl'}`}>
+        className={`relative w-48 h-72 transition-all duration-500 transform group-hover:-translate-y-2 group-hover:scale-105 ${isFeatured ? 'shadow-[0_0_25px_rgba(212,175,55,0.4)] ring-2 ring-[#d4af37]/30' : 'shadow-2xl'}`}>
 
-        {/* Spine effect */}
-        <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-black/40 to-transparent z-20 rounded-l-sm"></div>
+        {/* Decorative Frame */}
+        <div className="absolute inset-0 border-4 border-[#8b7355] border-opacity-60 pointer-events-none z-20">
+          {/* Inner frame */}
+          <div className="absolute inset-2 border-2 border-[#d4af37] border-opacity-40"></div>
+          {/* Corner decorations */}
+          <div className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-[#d4af37] opacity-60"></div>
+          <div className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-[#d4af37] opacity-60"></div>
+          <div className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-[#d4af37] opacity-60"></div>
+          <div className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-[#d4af37] opacity-60"></div>
+        </div>
 
-        {/* Cover texture */}
-        <div
-          className={`absolute inset-0 bg-gradient-to-br ${colorMap[color]} rounded-r-md border-t-2 border-b-2 border-r-2 border-[#d4af37]/30`}>
+        {/* Book Image */}
+        <div className="relative w-full h-full overflow-hidden bg-[#4a3f35]">
+          <img
+            src={imageUrl}
+            alt={t(titleKey)}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0"
+          />
+          {/* Overlay for better text visibility on hover */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        </div>
 
-          {/* Leather texture overlay */}
-          <div className="absolute inset-0 opacity-30 bg-[url('https://www.transparenttextures.com/patterns/leather.png')] mix-blend-overlay"></div>
-
-          {/* Ornate Border on Cover */}
-          <div className="absolute inset-3 border border-[#d4af37] opacity-60 rounded-sm">
-            <div className="absolute inset-1 border border-[#d4af37] opacity-40"></div>
-          </div>
-
-          {/* Title Area */}
-          <div className="absolute top-12 left-0 right-0 text-center px-4">
-            <h3 className="font-ornamental text-[#d4af37] text-lg leading-tight drop-shadow-md tracking-wider">
-              {title}
+        {/* Hover Overlay with Text */}
+        <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-30">
+          {/* Title */}
+          <div className="text-center mt-4">
+            <h3 className="font-ornamental text-[#d4af37] text-lg leading-tight drop-shadow-lg tracking-wider">
+              {t(titleKey)}
             </h3>
-            <div className="w-8 h-px bg-[#d4af37] mx-auto mt-2 opacity-70"></div>
+            <div className="w-12 h-px bg-[#d4af37] mx-auto mt-2 opacity-80"></div>
           </div>
 
-          {/* Center Ornament */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#d4af37] opacity-50">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12,2 L14,10 L22,12 L14,14 L12,22 L10,14 L2,12 L10,10 Z" />
-            </svg>
-          </div>
-
-          {/* Bottom Year */}
-          <div className="absolute bottom-8 left-0 right-0 text-center">
-            <span className="text-[#d4af37] text-xs font-serif tracking-[0.2em] opacity-80">
+          {/* Year at bottom */}
+          <div className="text-center mb-4">
+            <span className="text-[#d4af37] text-xs font-serif tracking-[0.2em] opacity-90">
               {year}
             </span>
           </div>
         </div>
       </div>
 
-      {/* Description below book */}
+      {/* Description below book - appears on hover */}
       <div className="mt-6 text-center max-w-xs px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
         <p className="text-[#4a3f35] text-sm italic font-manuscript leading-relaxed">
-          "{description}"
+          "{t(descriptionKey)}"
         </p>
       </div>
     </div>);
@@ -164,7 +149,8 @@ function Book({
 }
 export function BooksSection() {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const booksData = getBooksData(t, language);
   return (
     <section className="py-16 px-4">
       <div className="text-center mb-16">
@@ -179,10 +165,15 @@ export function BooksSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto justify-items-center">
         {booksData.map((book) =>
-        <Book
-          key={book.id}
-          {...book}
-          onClick={() => navigate(`/book/${book.id}`)} />
+          <Book
+            key={book.id}
+            id={book.id}
+            titleKey={book.titleKey}
+            year={book.year}
+            descriptionKey={book.descriptionKey}
+            imageUrl={book.imageUrl}
+            isFeatured={book.isFeatured}
+            onClick={() => navigate(`/book/${book.id}`)} />
 
         )}
       </div>

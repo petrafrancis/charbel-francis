@@ -9,52 +9,36 @@ interface TimelineEvent {
 export function LifeJourneyTimeline() {
   const { t, language } = useLanguage();
   const events: TimelineEvent[] = [
-  {
-    year: '1892',
-    title: language === 'en' ? 'The Beginning' : 'البداية',
-    description:
-    language === 'en' ?
-    'Born in the misty highlands of Scotland during a late autumn storm.' :
-    'ولد في مرتفعات اسكتلندا الضبابية خلال عاصفة خريفية متأخرة.',
-    location: language === 'en' ? 'Scottish Highlands' : 'مرتفعات اسكتلندا'
-  },
-  {
-    year: '1910',
-    title: language === 'en' ? 'Academic Pursuit' : 'السعي الأكاديمي',
-    description:
-    language === 'en' ?
-    'Enrolled at Miskatonic University to study folklore and ancient dialects.' :
-    'التحق بجامعة ميسكاتونيك لدراسة الفولكلور واللهجات القديمة.',
-    location:
-    language === 'en' ? 'Arkham, Massachusetts' : 'أركام، ماساتشوستس'
-  },
-  {
-    year: '1919',
-    title: language === 'en' ? 'The Great Journey' : 'الرحلة العظيمة',
-    description:
-    language === 'en' ?
-    'Traveled through the Carpathians, collecting local legends and drafting first manuscripts.' :
-    'سافر عبر جبال الكاربات، وجمع الأساطير المحلية وصاغ المخطوطات الأولى.',
-    location: language === 'en' ? 'Carpathian Mountains' : 'جبال الكاربات'
-  },
-  {
-    year: '1924',
-    title: language === 'en' ? 'First Publication' : 'النشر الأول',
-    description:
-    language === 'en' ?
-    'Published "The Whispering Gallery" to critical acclaim and public unease.' :
-    'نشر "معرض الهمس" وسط إشادة نقدية وقلق عام.',
-    location: language === 'en' ? 'London, England' : 'لندن، إنجلترا'
-  },
-  {
-    year: '1938',
-    title: language === 'en' ? 'Current Residence' : 'الإقامة الحالية',
-    description:
-    language === 'en' ?
-    'Resides in a repurposed lighthouse, writing by candlelight.' :
-    'يقيم في منارة أعيد استخدامها، ويكتب على ضوء الشموع.',
-    location: language === 'en' ? 'Maine Coast' : 'ساحل مين'
-  }];
+    {
+      year: '1892',
+      title: t('timeline_beginning'),
+      description: t('timeline_beginning_desc'),
+      location: t('timeline_beginning_location')
+    },
+    {
+      year: '1910',
+      title: t('timeline_academic'),
+      description: t('timeline_academic_desc'),
+      location: t('timeline_academic_location')
+    },
+    {
+      year: '1919',
+      title: t('timeline_journey'),
+      description: t('timeline_journey_desc'),
+      location: t('timeline_journey_location')
+    },
+    {
+      year: '1924',
+      title: t('timeline_publication'),
+      description: t('timeline_publication_desc'),
+      location: t('timeline_publication_location')
+    },
+    {
+      year: '1938',
+      title: t('timeline_residence'),
+      description: t('timeline_residence_desc'),
+      location: t('timeline_residence_location')
+    }];
 
   return (
     <div className="relative py-12 px-4 max-w-3xl mx-auto">
@@ -72,13 +56,13 @@ export function LifeJourneyTimeline() {
 
       <div className="space-y-12">
         {events.map((event, index) =>
-        <div
-          key={index}
-          className={`relative flex items-center justify-between ${index % 2 === 0 ? language === 'ar' ? 'flex-row-reverse' : 'flex-row' : language === 'ar' ? 'flex-row' : 'flex-row-reverse'}`}>
+          <div
+            key={index}
+            className={`relative flex items-center justify-between ${index % 2 === 0 ? language === 'ar' ? 'flex-row-reverse' : 'flex-row' : language === 'ar' ? 'flex-row' : 'flex-row-reverse'}`}>
 
             {/* Content Side */}
             <div
-            className={`w-5/12 ${index % 2 === 0 ? language === 'ar' ? 'text-left' : 'text-right' : language === 'ar' ? 'text-right' : 'text-left'}`}>
+              className={`w-5/12 ${index % 2 === 0 ? language === 'ar' ? 'text-left' : 'text-right' : language === 'ar' ? 'text-right' : 'text-left'}`}>
 
               <span className="block text-[#8b2e2e] font-ornamental text-lg mb-1">
                 {event.year}

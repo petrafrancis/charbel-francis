@@ -37,9 +37,7 @@ export function OrnamentalDivider({
       <div
         className={`flex flex-col items-center justify-center py-16 opacity-70 ${className}`}>
 
-        <div className="text-[#4a3f35] text-2xl font-serif tracking-[0.5em]">
-          FINIS
-        </div>
+
         <div className="mt-2 text-[#8b7355]">
           <svg width="60" height="20" viewBox="0 0 60 20" fill="currentColor">
             <path

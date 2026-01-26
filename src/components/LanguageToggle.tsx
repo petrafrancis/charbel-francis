@@ -11,13 +11,13 @@ export function LanguageToggle() {
       <span
         className={`font-serif text-[#4a3f35] font-bold ${language === 'en' ? 'opacity-100' : 'opacity-50'}`}>
 
-        EN
+        English
       </span>
       <div className="h-4 w-px bg-[#8b7355]"></div>
       <span
         className={`font-serif text-[#4a3f35] font-bold ${language === 'ar' ? 'opacity-100' : 'opacity-50'}`}>
 
-        عربي
+        العربية
       </span>
 
       {/* Ornamental corners */}

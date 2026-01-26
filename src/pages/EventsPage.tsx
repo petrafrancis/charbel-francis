@@ -122,7 +122,7 @@ export function EventsPage() {
             ←
           </span>
           <span className="italic border-b border-transparent group-hover:border-[#8b2e2e]">
-            {language === 'en' ? 'Back to Home' : 'العودة إلى الصفحة الرئيسية'}
+            {t('back_to_home')}
           </span>
         </button>
       </div>
@@ -138,18 +138,14 @@ export function EventsPage() {
           {/* Header */}
           <div className="text-center mb-16">
             <span className="text-[#8b7355] text-sm tracking-[0.3em] uppercase block mb-2">
-              {language === 'en' ? 'Literary Engagements' : 'المشاركات الأدبية'}
+              {t('events_subtitle')}
             </span>
             <h1 className="text-5xl font-ornamental text-[#4a3f35] mb-4">
-              {language === 'en' ?
-              'Events & Appearances' :
-              'الفعاليات والمشاركات'}
+              {t('events_title')}
             </h1>
             <div className="w-24 h-1 bg-[#8b2e2e] mx-auto mt-4 rounded-full opacity-80"></div>
             <p className="text-[#6d5a43] font-manuscript italic mt-6 max-w-2xl mx-auto">
-              {language === 'en' ?
-              'A chronicle of literary gatherings, readings, and scholarly discourse spanning the years of authorship.' :
-              'سجل للتجمعات الأدبية والقراءات والخطاب العلمي عبر سنوات التأليف.'}
+              {t('events_description')}
             </p>
           </div>
 

@@ -36,17 +36,14 @@ export function UpcomingReleases() {
 
           <div className="w-full md:w-2/3 text-center md:text-left">
             <h3 className="text-2xl font-bold text-[#4a3f35] mb-3 font-manuscript uppercase tracking-wide group-hover:text-[#8b2e2e] transition-colors">
-              The Clockwork Heart
+              {t('book_clockwork_heart_title')}
             </h3>
             <p className="text-[#4a3f35] leading-relaxed mb-6 font-manuscript">
-              In the gas-lit streets of Victorian London, a watchmaker discovers
-              a mechanism that can beat forever—but at a terrible cost. A gothic
-              romance interwoven with mechanical horror, exploring the boundary
-              between the soul and the machine.
+              {t('book_clockwork_heart_summary').split('.')[0] + '.'}
             </p>
 
             <div className="inline-flex items-center gap-2 text-[#8b2e2e] font-manuscript italic border-b border-[#8b2e2e] border-opacity-50 group-hover:border-opacity-100 transition-all">
-              <span>Click to read more</span>
+              <span>{t('click_to_read_more')}</span>
               <svg
                 className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
                 fill="none"

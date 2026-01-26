@@ -10,7 +10,7 @@ module.exports = {
       fontFamily: {
         serif: ['"Cormorant Garamond"', 'serif'],
         sans: ['"Spectral"', 'serif'],
-        arabic: ['"Noto Naskh Arabic"', 'serif'],
+        arabic: ['"Amiri"', '"Scheherazade New"', 'serif'],
       },
       colors: {
         cream: '#FBF8F3',

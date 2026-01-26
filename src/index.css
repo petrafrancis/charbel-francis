@@ -2,7 +2,8 @@
 /* URL IMPORTS (SUCH AS FONT IMPORTS) SHOULD BE KEPT ABOVE TAILWIND IMPORTS - DO NOT DELETE THIS COMMENT */
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap');
 
 /* PLEASE NOTE: THESE TAILWIND IMPORTS SHOULD NEVER BE DELETED - DO NOT DELETE THIS COMMENT */
 @import 'tailwindcss/base';
@@ -27,19 +28,39 @@ body {
   position: relative;
 }
 
-/* RTL Support */
+/* RTL Support - Artistic Arabic Font */
 [dir="rtl"] body {
-  font-family: 'Noto Naskh Arabic', 'EB Garamond', serif;
+  font-family: 'Amiri', 'Scheherazade New', serif;
   text-align: right;
 }
 
 [dir="rtl"] .font-manuscript {
-  font-family: 'Noto Naskh Arabic', serif;
+  font-family: 'Amiri', serif;
 }
 
 [dir="rtl"] .font-ornamental {
-  font-family: 'Noto Naskh Arabic', cursive;
+  font-family: 'Scheherazade New', serif;
   font-weight: 700;
+}
+
+/* Apply artistic Arabic font to all text elements in RTL mode */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] p,
+[dir="rtl"] span:not([class*="icon"]):not([class*="svg"]),
+[dir="rtl"] a,
+[dir="rtl"] button,
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] label,
+[dir="rtl"] li,
+[dir="rtl"] td,
+[dir="rtl"] th {
+  font-family: 'Amiri', 'Scheherazade New', serif;
 }
 
 /* Paper Texture & Vignette */
