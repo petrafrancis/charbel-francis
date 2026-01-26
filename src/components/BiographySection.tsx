@@ -60,14 +60,29 @@ export function BiographySection() {
 
       <div className="mt-12 flex justify-end">
         <div className="relative">
-          <p
-            className="font-cursive text-3xl text-[#8b2e2e] transform -rotate-6 opacity-80"
-            style={{
-              fontFamily: 'cursive'
-            }}>
-
-            {t('author_name')}
-          </p>
+          <div className={`flex items-center gap-3 ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
+            {language === 'ar' && (
+              <img 
+                src="/quill.png" 
+                alt="Quill" 
+                className="w-8 h-8 object-contain opacity-80"
+              />
+            )}
+            <p
+              className="font-cursive text-3xl text-[#8b2e2e] transform -rotate-6 opacity-80"
+              style={{
+                fontFamily: 'cursive'
+              }}>
+              {t('author_name')}
+            </p>
+            {language === 'en' && (
+              <img 
+                src="/quill.png" 
+                alt="Quill" 
+                className="w-8 h-8 object-contain opacity-80"
+              />
+            )}
+          </div>
           <div className="h-px w-full bg-[#8b2e2e] opacity-50 mt-1"></div>
         </div>
       </div>
