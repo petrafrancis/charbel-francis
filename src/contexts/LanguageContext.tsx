@@ -33,7 +33,7 @@ const translations: Record<string, Record<Language, string>> = {
 
   // Headers & Titles
   manuscript_subtitle: {
-    en: 'Est. MDCsCCXCdIsI',
+    en: 'Est. MDCsCsCXCdIsI',
     ar: 'الشّاعر والأديب'
   },
   author_name: {
