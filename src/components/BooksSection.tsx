@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
+
 export interface BookData {
   id: string;
   titleKey: string;
@@ -17,8 +18,20 @@ export interface BookData {
 
 export function getBooksData(t: (key: string) => string, language: 'en' | 'ar'): BookData[] {
   return [
-
-
+    
+    {
+      id: 'clockwork-heart',
+      titleKey: 'book_clockwork_heart_title',
+      year: 'MDCCCCXXXVIII',
+      color: 'brown',
+      descriptionKey: 'book_clockwork_heart_desc',
+      summaryKey: 'book_clockwork_heart_summary',
+      genreKey: 'book_clockwork_heart_genre',
+      releaseDate: language === 'ar' ? '8 آذار 2026' : 'March 8, 2026',
+      imageUrl: '/3-inner.png',
+      isUpcoming: true,
+      isFeatured: true
+    },
     {
       id: 'alchemists-daughter',
       titleKey: 'book_alchemists_daughter_title',
@@ -27,9 +40,8 @@ export function getBooksData(t: (key: string) => string, language: 'en' | 'ar'):
       descriptionKey: 'book_alchemists_daughter_desc',
       summaryKey: 'book_alchemists_daughter_summary',
       genreKey: 'book_alchemists_daughter_genre',
-      releaseDate: language === 'ar' ? '23 سبتمبر 1931' : 'September 23, 1931',
-      imageUrl: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=600&fit=crop&q=80',
-      isFeatured: true
+      releaseDate: language === 'ar' ? '13 شباط 2022' : 'February 13, 2022',
+      imageUrl: '/2.png'
     },
     {
       id: 'echoes-void',
@@ -39,20 +51,8 @@ export function getBooksData(t: (key: string) => string, language: 'en' | 'ar'):
       descriptionKey: 'book_echoes_void_desc',
       summaryKey: 'book_echoes_void_summary',
       genreKey: 'book_echoes_void_genre',
-      releaseDate: language === 'ar' ? '12 ديسمبر 1935' : 'December 12, 1935',
-      imageUrl: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&h=600&fit=crop&q=80'
-    },
-    {
-      id: 'clockwork-heart',
-      titleKey: 'book_clockwork_heart_title',
-      year: 'MDCCCCXXXVIII',
-      color: 'brown',
-      descriptionKey: 'book_clockwork_heart_desc',
-      summaryKey: 'book_clockwork_heart_summary',
-      genreKey: 'book_clockwork_heart_genre',
-      releaseDate: language === 'ar' ? 'خريف 1938' : 'Autumn 1938',
-      imageUrl: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=600&fit=crop&q=80',
-      isUpcoming: true
+      releaseDate: language === 'ar' ? '2018' : '2018',
+      imageUrl: '/1.png'
     }
   ];
 }
@@ -74,7 +74,7 @@ function Book({
   isFeatured,
   onClick
 }: BookProps) {
-  const { t } = useLanguage();
+  const { t, direction } = useLanguage();
   return (
     <div
       onClick={onClick}
@@ -82,7 +82,7 @@ function Book({
 
       {/* Featured Badge */}
       {isFeatured &&
-        <div className="absolute -top-4 -right-4 z-30 animate-bounce-slow">
+        <div className="absolute -top-1 -right-0 z-20 animate-bounce-slow">
           <div className="bg-[#d4af37] text-[#3a0e0e] text-xs font-bold px-3 py-1 shadow-lg border border-[#8b7355] transform rotate-12 flex flex-col items-center">
             <span className="uppercase tracking-wider">
               {t('featured_event')}
@@ -95,7 +95,7 @@ function Book({
 
       {/* Book Cover with Frame */}
       <div
-        className={`relative w-48 h-72 transition-all duration-500 transform group-hover:-translate-y-2 group-hover:scale-105 ${isFeatured ? 'shadow-[0_0_25px_rgba(212,175,55,0.4)] ring-2 ring-[#d4af37]/30' : 'shadow-2xl'}`}>
+        className={`relative w-48 h-72 ${isFeatured ? 'ring-2 ring-[#d4af37]/30' : ''}`}>
 
         {/* Decorative Frame */}
         <div className="absolute inset-0 border-4 border-[#8b7355] border-opacity-60 pointer-events-none z-20">
@@ -113,33 +113,23 @@ function Book({
           <img
             src={imageUrl}
             alt={t(titleKey)}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0"
+            className="w-full h-full object-cover "
           />
-          {/* Overlay for better text visibility on hover */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        </div>
-
-        {/* Hover Overlay with Text */}
-        <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-30">
-          {/* Title */}
-          <div className="text-center mt-4">
-            <h3 className="font-ornamental text-[#d4af37] text-lg leading-tight drop-shadow-lg tracking-wider">
-              {t(titleKey)}
-            </h3>
-            <div className="w-12 h-px bg-[#d4af37] mx-auto mt-2 opacity-80"></div>
-          </div>
-
-          {/* Year at bottom */}
-          <div className="text-center mb-4">
-            <span className="text-[#d4af37] text-xs font-serif tracking-[0.2em] opacity-90">
-              {year}
-            </span>
-          </div>
         </div>
       </div>
 
-      {/* Description below book - appears on hover */}
-      <div className="mt-6 text-center max-w-xs px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      {/* View more - under the image */}
+      <div className="mt-2 flex items-center justify-center gap-1.5">
+        <span className="text-[#8b7355] text-xs font-serif font-bold tracking-wider">
+          {t('view_more')}
+        </span>
+        <span className="text-[#8b7355] text-sm font-bold" aria-hidden="true">
+          {direction === 'rtl' ? '←' : '→'}
+        </span>
+      </div>
+
+      {/* Description below book */}
+      <div className="mt-6 text-center max-w-xs px-2 opacity-0 opacity-100 ">
         <p className="text-[#4a3f35] text-sm italic font-manuscript leading-relaxed">
           "{t(descriptionKey)}"
         </p>
@@ -163,7 +153,7 @@ export function BooksSection() {
         <div className="w-24 h-1 bg-[#8b2e2e] mx-auto mt-4 rounded-full opacity-80"></div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto justify-items-center">
+      <div className="flex flex-wrap justify-center items-start gap-12 max-w-7xl mx-auto">
         {booksData.map((book) =>
           <Book
             key={book.id}

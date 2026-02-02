@@ -30,10 +30,14 @@ const translations: Record<string, Record<Language, string>> = {
     en: 'Click to read more',
     ar: 'انقر للقراءة المزيد'
   },
+  view_more: {
+    en: 'View more',
+    ar: 'عرض المزيد'
+  },
 
   // Headers & Titles
   manuscript_subtitle: {
-    en: 'Est. MDCsCsCXCdIsI',
+    en: 'The Poet and Writer',
     ar: 'الشّاعر والأديب'
   },
   author_name: {
@@ -41,8 +45,8 @@ const translations: Record<string, Record<Language, string>> = {
     ar: 'شربل فرنسيس'
   },
   author_title: {
-    en: 'Purveyor of Fine Gothic Mysteries & Eldritch Tales',
-    ar: 'بائع أسرار القوطية الرائعة وحكايات الغرائب'
+    en: 'Collector of Emotions, Soul Reflections, and Tales of the Homeland',
+    ar: 'جامع المشاعر وتأملات الروح وحكايات الوطن'
   },
   about_author: {
     en: 'About the Author',
@@ -206,55 +210,58 @@ const translations: Record<string, Record<Language, string>> = {
   },
   // Books
 
-  book_alchemists_daughter_title: {
-    en: "The Alchemist's Daughter",
-    ar: 'ابنة الخيميائي'
-  },
-  book_alchemists_daughter_desc: {
-    en: 'Alchemy and obsession collide in 17th century Prague.',
-    ar: 'الخيمياء والهوس يتصادمان في براغ القرن السابع عشر.'
-  },
-  book_alchemists_daughter_summary: {
-    en: "In the winding streets of 17th century Prague, the daughter of a renowned alchemist discovers her father's true goal was not gold, but immortality. As she uncovers his dark experiments, she realizes she is the final ingredient in his magnum opus. A tale of betrayal, magic, and the high price of eternal life.",
-    ar: 'في شوارع براغ المتعرجة في القرن السابع عشر، تكتشف ابنة خيميائي مشهور أن هدف والدها الحقيقي لم يكن الذهب، بل الخلود. بينما تكشف تجاربه المظلمة، تدرك أنها المكون الأخير في تحفته. قصة خيانة وسحر وثمن الخلود الباهظ.'
-  },
-  book_alchemists_daughter_genre: {
-    en: 'Historical Fantasy',
-    ar: 'خيال تاريخي'
-  },
-
-  book_echoes_void_title: {
-    en: 'Echoes of the Void',
-    ar: 'أصداء الفراغ'
-  },
-  book_echoes_void_desc: {
-    en: 'A collection of short stories exploring the spaces between worlds.',
-    ar: 'مجموعة قصص قصيرة تستكشف الفضاءات بين العوالم.'
-  },
-  book_echoes_void_summary: {
-    en: 'A chilling anthology of short stories that explore the thin veil between our reality and the void beyond. From a mirror that reflects a different room to a clock that counts backwards to the end of time, these tales will leave you questioning the nature of existence itself.',
-    ar: 'مختارات مرعبة من القصص القصيرة التي تستكشف الحجاب الرقيق بين واقعنا والفراغ خلفه. من مرآة تعكس غرفة مختلفة إلى ساعة تعد عكسياً حتى نهاية الزمن، هذه الحكايات ستجعلك تتساءل عن طبيعة الوجود نفسه.'
-  },
-  book_echoes_void_genre: {
-    en: 'Cosmic Horror Anthology',
-    ar: 'مختارات رعب كوني'
-  },
-
   book_clockwork_heart_title: {
     en: 'Shahqat Fikr',
     ar: 'شهئة فكر'
   },
   book_clockwork_heart_desc: {
-    en: 'A gothic romance interwoven with mechanical horror.',
-    ar: 'رومانسية قوطية منسوجة مع رعب ميكانيكي.'
+    en: 'A vibrant poetry collection in the colloquial dialect exploring love, daily life, and the human inner world, blending heartfelt emotion with philosophical reflection.',
+    ar: 'ديوان شعري حيّ باللهجة المحكيّة يستكشف الحبّ والحياة اليومية والوجدان الإنساني، ويجمع بين العاطفة الصادقة والتأمّلات الفلسفية.'
   },
   book_clockwork_heart_summary: {
-    en:'A poetry collection written in the colloquial dialect that touches on the details of everyday life and the human inner world, delving into emotions of love and existential questions through a simple, heartfelt style. The poet blends popular emotional expression with deep philosophical reflection, offering vivid, metaphor-rich texts with a lyrical quality, a distinct poetic identity, and a profound exploration of humanity’s ongoing search for meaning in an ever-changing world.',
-    ar: 'ديوان شعري باللهجة المحكيّة يلامس تفاصيل الحياة اليوميّة والوجدان الإنساني، ويغوص في مشاعر الحبّ وتساؤلات الوجود بأسلوب بسيط وقريب إلى القلب. يمزج الشاعر بين العاطفة الشعبيّة والتأمّل الفلسفي العميق، مقدّمًا نصوصًا نابضة بالحياة، غنيّة بالمجاز، وقابلة للغنائيّة، تحمل هوية شعريّة متفرّدة وتعبّر عن بحث الإنسان الدائم عن المعنى في عالم متقلّب.'
+    en: "A poetry collection written in the colloquial dialect, exploring a wide range of themes related to everyday life, human emotions, and love, infused with touches of philosophy and deep reflection. Its style is marked by simplicity and emotional closeness, blending popular, heartfelt expression with a notable intellectual depth.\n\nIn several poems, the poet delves into feelings of love and emotions tied to the human condition, framed within philosophical perspectives that express the soul’s passion and its longing for wholeness and spiritual and intellectual connection. The collection also explores the human inner world, with its contradictions and existential questions about life, death, and being—reflecting an ongoing search for meaning in a world filled with challenges and pain. In addition, it addresses themes related to human relationships and social interactions.\n\nThe collection includes references to various occasions, both personal and social, presented through a creative style that lends itself artistically to musical and lyrical adaptation. Critical reception highlights the collection’s dynamic and vibrant poetic style, noting that the careful use of colloquial language gives the poems a distinctive character. “Shahqat Fikr” (A Sigh of Thought) is celebrated for its emotional and intellectual richness, offering profound psychological and philosophical reflections, making it a truly unique poetic work.",
+    
+    ar: "ديوان شعري باللهجة المحكيّة تتناول قصائده مواضيع شتّى تتعلّق بالحياة اليوميّة، والوجدان الإنساني، والحب، مع لمسات من الفلسفة والتأمّلات العميقة. يتّسم أسلوبه بالبساطة والقرب من القلب، حيث يمزج بين الأسلوب الشعبي والعاطفي، لكنه يحمل في طيّاته عمقًا فكريًا لافتًا.\n\nيتناول الشاعر في بعض قصائده مشاعر الحبّ والعواطف المرتبطة بالوجود الإنساني ضمن تصوّرات فلسفيّة تعبّر عن شغف النفس وتوقها إلى التكامل والارتباط الروحي والعقلي. كما يضيء الديوان على الوجدان الداخلي للإنسان، وما يعتريه من تناقضات وتساؤلات حول الحياة والموت والوجود، في انعكاسٍ لبحثٍ دائم عن المعنى في عالم مليء بالتحدّيات والآلام، إضافة إلى تناوله موضوعات تتعلّق بالعلاقات الإنسانيّة والتفاعلات المجتمعيّة.\n\nويحمل الديوان إشارات إلى مناسبات مختلفة، اجتماعيّة كانت أم شخصيّة، يسكبها الشاعر بأسلوب إبداعي قد يصلح فنيًا للغنائيّة. وقد ميّز النقّاد الديوان بأسلوبه الشعري الحيوي والديناميكي، مؤكدين أن استخدام اللغة المحكيّة بعناية منح النصوص طابعًا فريدًا. يُعدّ ديوان «شهقة فكر» عملًا شعريًا فريدًا غنيًا بالبعد العاطفي والفكري، ويمثل نافذة للتأمّلات النفسية والفلسفية العميقة."
   },
+  
   book_clockwork_heart_genre: {
-    en: 'Gothic Romance',
-    ar: 'رومانسية قوطية'
+    en: 'Poetry',
+    ar: 'شعر'
+  },
+  book_alchemists_daughter_title: {
+    en: "Sada Al-Wijdan",
+    ar: 'صدى الوجدان'
+  },
+  book_alchemists_daughter_desc: {
+    en: 'A poetic journey in the colloquial dialect, exploring love, national pride, and the human inner world. Vivid, heartfelt, and rich with philosophical reflections, it offers readers a window into life’s joys and pains.',
+    ar: 'رحلة شعرية باللهجة المحكية تستكشف الحب والفخر الوطني والوجدان الإنساني. نصوص نابضة بالحياة، عاطفية وغنية بالتأملات الفلسفية، تقدّم للقارئ نافذة لرؤية الفرح والألم.'
+  },
+  book_alchemists_daughter_summary: {
+    en: "It is a poetic journey that takes the reader across a vast horizon of emotions and reflections, blending love, national pride, and daily human experiences. This collection includes a series of poems in the colloquial dialect, telling vivid stories rooted in reality and exploring different shades of feeling, offering the reader a window to see joy and pain through simple, flowing words.\n\nThe collection is divided into four sections, each representing a central theme reflecting the various colors of life: romance pulsing with longing, passion, and beauty; patriotism reflecting the spirit of belonging and pride in one’s homeland; wisdom drawn from the poet’s personal life experiences, shaped into verse; and inner emotions summarizing the deepest feelings in moments of contemplation.\n\nOne poet described it as a collection pulsating with feeling, a sanctuary of love for both woman and homeland, its thorns prancing in the fields of thought between reproach and silence, between burning longing and nostalgia, and salty tears flowing from the poet’s ink, drawn from the cedars of Lebanon. Another poet read in it the birth of tales filled with poetry, where the poet’s longing sprouts into verses, and his soul blossoms like carnelian with creativity. It has been said of this collection that it leads the reader through deserts of fire and light, prompting us to pray before the silence of life, observe beauty, and fill ourselves with the highest nectar the poet wished to lift us toward.",
+    
+    ar: "هو رحلة شعرية تأخذ القارئ في أفق واسع من المشاعر والتأملات، ممزوجة بين الحب والفخر الوطني، والتجارب الإنسانية اليومية. يضمّ هذا الديوان مجموعة من القصائد باللهجة المحكية، والتي تروي قصصًا حية من عمق الواقع وتستعرض ألوانًا مختلفة من الشعور، مقدمةً للقارئ نافذةً لرؤية الفرح والوجع من خلال كلمات بسيطة وسلسة.\n\nوقد قسّم الديوان إلى أربعة أبواب تمثّل مواضيع رئيسية تنوعت بين ألوان الحياة المختلفة، من غزل ينبض بالشوق والشّغف والجمال، ووطنيات تعكس روح الانتماء والفخر بالوطن، وحِكم مُستمدّة من تجارب حياتيّة عاشها الشاعر فقولبها في قصائده، ووجدانيات تلخّص أعمق المشاعر في لحظات التأمل.\n\nقرأ فيه أحد الشعراء ديوانًا ينبض بالوجدان طيّ واحةٍ من العشق للمرأة وللوطن، أشواكها حشرجات تتبختر في بيادر الفكر بين عتب وسكوت، بين حرقةٍ وحنين، ودمع مالح ينضح من دواة حبر الشاعر المتدفّق من أرز لبنان. وقرأ فيه شاعر آخر ولادة حكايات ممتلئة بالشعر، يورِق فيها وجد الشاعر قصائد، وتزهر روحه عقيقًا من الإبداع. كما قيل في الديوان أنّه يأخذ القارئ إلى فيافي من نار ونور، فيجعلنا نبتهل أمام صمت الحياة، ونرصد الجمال، ونمتلئ من ذاك الرحيق الأعلى الذي أراد الشاعر أن يرفعنا إليه."
+  },  
+  book_alchemists_daughter_genre: {
+    en: 'Contemporary Poetry',
+    ar: 'الشعر المعاصر'
+  },
+
+  book_echoes_void_title: {
+    en: 'Hibr Al-Nidal',
+    ar: 'حبر النّضال'
+  },
+  book_echoes_void_desc: {
+    en: 'A compelling collection of political articles, poems, and essays documenting Lebanon’s struggles under external tutelage since 1990. It offers a vivid, honest reflection on history, daily life, and national resilience.',
+    ar: 'مجموعة مؤثرة من المقالات السياسية والأشعار والمقتطفات التي توثق صراعات لبنان تحت الوصاية الخارجية منذ عام 1990. تقدّم انعكاسًا حيًا وصادقًا للتاريخ والحياة اليومية وصمود الوطن.'
+  },
+  book_echoes_void_summary: {
+    en: "It contains political articles, poems, and excerpts from essays arranged in a chronological context to serve as a witness to the period of external tutelage that Lebanon experienced since 1990. Through historical recounting and analysis, the author addresses the most significant events Lebanon went through, conveying painful daily scenes that document the events and testify to an authority that subordinated Lebanon’s decisions to foreign powers, spreading corruption throughout state institutions, and bringing the country to a state of profound decline.\n\nSome critics have described it as a living memory and a faithful keeper of the suffering Lebanon endured during the period of tutelage, a work that can be relied upon to extract lessons so as not to repeat past mistakes—since nations that repeat their errors cannot progress. Others have regarded it as an honest mirror reflecting how national struggle became a daily prayer under occupation.",
+    
+    ar: "يحتوي على مقالات سياسيّة وأشعار ومُقتطفات من مقالات رُتّبت في سياق زمني لتكون شاهدة على فترة من الوصاية الخارجيّة التي عاشها لبنان منذ عام 1990. يتناول فيه الكاتب عن طريق التأريخ والتحليل أهمّ المحطّات التي عاشها لبنان، وينقل مشاهد يوميّة مؤلمة تؤرّخ للأحداث، وتشهد على سلطة باعت قرار لبنان للخارج، وعاثت في مؤسّسات الدولة فسادًا، حتى وصلت بالوطن إلى انهيار تام.\n\nوصفه بعض النقّاد بأنّه ذاكرة حيّة، وحافظة أمينة للمعاناة التي عاشها لبنان في فترة الوصاية، يمكن الركون إليه لاستخلاص العِبر كي لا نُكرّر أخطاءنا، فالشعوب التي تُكرّر أخطاءها لا يمكنها أن تتقدّم. كما اعتبره البعض الآخر مرآةً صادقة لكيفيّة تحوّل النضال الوطني إلى صلاة يومية في ظلّ الاحتلال."
+  },  
+  book_echoes_void_genre: {
+    en: 'Political Writing',
+    ar: 'كتابات سياسية'
   },
 
   // Book Details
