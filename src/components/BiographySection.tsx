@@ -2,9 +2,9 @@ import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 export function BiographySection() {
   const { t, language } = useLanguage();
-  const firstLetter = language === 'ar' ? 'و' : 'B';
+  const firstLetter = language === 'ar' ? 'ش' : 'C';
   // Author image URL - replace with actual author image
-  const authorImageUrl = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&q=80';
+  const authorImageUrl = '/image.png';
 
   return (
     <section className="relative max-w-3xl mx-auto px-8 py-12">
@@ -18,15 +18,10 @@ export function BiographySection() {
       <div className={`flex justify-center mb-8 ${language === 'ar' ? 'md:float-left md:mr-8 md:ml-0' : 'md:float-right md:ml-8 md:mr-0'} md:w-64 md:mb-4`}>
         <div className="relative w-48 h-48 md:w-64 md:h-64">
           {/* Decorative Frame */}
-          <div className="absolute inset-0 border-4 border-[#8b7355] border-opacity-60 rounded-full pointer-events-none z-20">
+          <div className="absolute inset-0 border-4 border-[#8b7355] border-opacity-90 rounded-full pointer-events-none z-20">
             {/* Inner frame */}
-            <div className="absolute inset-3 border-2 border-[#d4af37] border-opacity-40 rounded-full"></div>
             {/* Corner decorations */}
-            <div className="absolute top-2 left-2 w-4 h-4 border-t-2 border-l-2 border-[#d4af37] opacity-60 rounded-tl-lg"></div>
-            <div className="absolute top-2 right-2 w-4 h-4 border-t-2 border-r-2 border-[#d4af37] opacity-60 rounded-tr-lg"></div>
-            <div className="absolute bottom-2 left-2 w-4 h-4 border-b-2 border-l-2 border-[#d4af37] opacity-60 rounded-bl-lg"></div>
-            <div className="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-[#d4af37] opacity-60 rounded-br-lg"></div>
-          </div>
+            </div>
 
           {/* Author Image */}
           <div className="relative w-full h-full overflow-hidden rounded-full bg-[#4a3f35]">

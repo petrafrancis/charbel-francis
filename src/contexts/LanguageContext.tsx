@@ -61,12 +61,12 @@ const translations: Record<string, Record<Language, string>> = {
     ar: 'المجموعة الكاملة'
   },
   forthcoming: {
-    en: 'Forthcoming from the Press',
-    ar: 'إصدارات قادمة من المطبعة'
+    en: 'New Release',
+    ar: 'الإصدار الجديد'
   },
   expected: {
-    en: 'Expected Autumn, 1938',
-    ar: 'متوقع في خريف 1938'
+    en: '8 March, 2026',
+    ar: '8 آذار 2026'
   },
   featured_event: {
     en: 'New',
@@ -79,80 +79,131 @@ const translations: Record<string, Record<Language, string>> = {
 
   // Biography
   biography_paragraph_1: {
-    en: 'Born in the misty highlands during the late autumn of 1892, Arthur Blackwood has spent a lifetime chronicling the whispers that echo through the corridors of time. His fascination with the arcane began not in a library, but in the crumbling ruins of his ancestral home, where he discovered a cache of letters detailing encounters with the unexplained.',
-    ar: 'وُلد في المرتفعات الضبابية خلال أواخر خريف عام 1892، قضى آرثر بلاكوود حياته في توثيق الهمسات التي تتردد في ممرات الزمن. بدأ شغفه بالغامض ليس في مكتبة، بل في أنقاض منزله الأبوي المتداعي، حيث اكتشف مجموعة من الرسائل التي تصف لقاءات مع غير المفسر.'
+    en:'Charbel Chafic Francis is a Lebanese educator and writer, married with three children. He obtained a Teaching Degree (BA) in Arabic Language and Literature from the Lebanese University – Third Branch in Qoubbeh in 1990, then completed a year of postgraduate studies in Arabic Language and Literature at the Lebanese University – Faculty of Letters and Human Sciences, Second Branch in Fanar in 1993.',
+    ar:'شربل شفيق فرنسيس مربٍّ وأديب لبناني، متأهّل وله ثلاثة أولاد. نال إجازة تعليميّة في اللغة العربيّة وآدابها من الجامعة اللبنانيّة–الفرع الثالث في القبة عام 1990، ثم تابع سنة دراسات عليا في اللغة العربيّة وآدابها في الجامعة اللبنانيّة–كليّة الآداب والعلوم الإنسانيّة–الفرع الثاني في الفنار عام 1993.'
   },
   biography_paragraph_2: {
-    en: 'Educated at Miskatonic University before its unfortunate closure, Blackwood dedicated his early years to the study of folklore and forgotten dialects. It was during his travels through the Carpathians that he first put quill to parchment, drafting what would become his seminal work, The Shadow Over Innsmouth.',
-    ar: 'تلقى تعليمه في جامعة ميسكاتونيك قبل إغلاقها المؤسف، كرس بلاكوود سنواته الأولى لدراسة الفولكلور واللهجات المنسية. كان خلال رحلاته عبر جبال الكاربات حيث وضع القلم على الرق لأول مرة، وصاغ ما سيصبح عمله الأساسي، الظل فوق إينسماوث.'
+    en:'Since 2001, he has worked as a teacher and Arabic Language Coordinator at Saint George Secondary School – Ashash, affiliated with the Lebanese Maronite Order. Since 2002, he has served as Secretary of the Cultural and Educational Association for the Schools of Zgharta–Zawiya. He also held the position of Media Officer for the Teachers’ Syndicate – North Branch between 2005 and 2009, and is a founding member and Vice President of the “Bukhoor Al-Wahy Forum.”',
+    ar: 'يعمل منذ عام 2001 مدرّسًا ومنسّقًا للّغة العربيّة في ثانويّة مار جرجس–عشاش للرهبانيّة اللبنانيّة المارونيّة، ويتولّى منذ عام 2002 أمانة سرّ الجمعيّة الثقافيّة التربويّة لمدارس زغرتا–الزاوية. كما شغل منصب المسؤول الإعلامي لنقابة المعلّمين–فرع الشمال بين عامي 2005 و2009، وهو عضو مؤسّس ونائب رئيس “منتدى بخور الوحي”.'
   },
   biography_paragraph_3: {
-    en: 'Today, he resides in a repurposed lighthouse off the coast of Maine, accompanied only by his loyal wolfhound, Barnaby, and an extensive collection of maps to places that no longer exist. He writes exclusively by candlelight, believing that electric illumination chases away the very shadows he seeks to capture.',
-    ar: 'اليوم، يقيم في منارة أعيد استخدامها قبالة ساحل مين، برفقة كلبه الذئبي المخلص بارنابي فقط، ومجموعة واسعة من الخرائط لأماكن لم تعد موجودة. يكتب حصرياً على ضوء الشموع، معتقداً أن الإضاءة الكهربائية تطرد الظلال نفسها التي يسعى لالتقاطها.'
+    en:'He has extensive experience in the fields of Arabic language, literature, and curriculum development, and has participated in specialized training courses, earning several certificates and commendations. Notably, he received a certificate of appreciation from the Holy Spirit University of Kaslik (2015), a commendation from the President of the Republic, General Michel Aoun, for his book Hibr Al-Nidal (2019), and a medal and commendation from the Minister of National Defense, Yaacoub Sarraf, for the song Askarna Ma Biyenhani (2018). He has taken part in poetry evenings and cultural seminars, contributed to the linguistic editing of several books, and helped prepare educational assessment materials. His published works include Hibr Al-Nidal, Sada Al-Wijdan, and Shahqat Fikr, with forthcoming titles Ilayha Wa Hiya Ta‘lam and Bayna Al-Tabshoura Wa Al-Yara‘… Huroof ‘ala Darb Al-Risala.',
+    ar:'يتمتّع بخبرات واسعة في مجال اللغة والأدب وتطوير مناهج تعليم العربيّة، وشارك في دورات تدريبيّة متخصّصة ونال شهادات وتنويهات عدّة، أبرزها شهادة تقدير من جامعة الروح القدس–الكسليك (2015)، وتنويه رئيس الجمهوريّة العماد ميشال عون عن كتابه حبرُ النّضال (2019)، ووسام وتنويه وزير الدفاع الوطني يعقوب الصرّاف عن أغنية عسكرنا ما بينحني (2018). شارك في أمسيات شعريّة وندوات ثقافيّة، وأسهم في التدقيق اللغوي لعدد من الكتب وفي إعداد مواد تربويّة، وله إصدارات أدبيّة منها حبرُ النّضال، صدى الوجدان، شهقة فكر، إضافة إلى أعمال قيد الطباعة هي إليها وهي تعلمُ وبين الطبشورة واليراع… حروفٌ على درب الرسالة.'
   },
 
   // Timeline Events
   timeline_beginning: {
-    en: 'The Beginning',
-    ar: 'البداية'
+    en: 'Obtaining a University Degree',
+    ar: 'نيل الإجازة الجامعيّة'
   },
   timeline_beginning_desc: {
-    en: 'Born in the misty highlands of Scotland during a late autumn storm.',
-    ar: 'ولد في مرتفعات اسكتلندا الضبابية خلال عاصفة خريفية متأخرة.'
+    en: 'Obtained a Teaching Degree in Arabic Language and Literature from the Lebanese University – Third Branch, Qobbeh',
+    ar: 'نال إجازة تعليميّة في اللغة العربيّة وآدابها من الجامعة اللبنانيّة – الفرع الثالث في القبة'
   },
   timeline_beginning_location: {
-    en: 'Scottish Highlands',
-    ar: 'مرتفعات اسكتلندا'
+    en: 'Lebanese University – Third Branch, Qobbeh.',
+    ar: 'الجامعة اللبنانيّة – الفرع الثالث في القبة'
   },
   timeline_academic: {
-    en: 'Academic Pursuit',
-    ar: 'السعي الأكاديمي'
+    en: 'Pursuing Postgraduate Studies',
+    ar:'متابعة الدراسات العليا'
   },
   timeline_academic_desc: {
-    en: 'Enrolled at Miskatonic University to study folklore and ancient dialects.',
-    ar: 'التحق بجامعة ميسكاتونيك لدراسة الفولكلور واللهجات القديمة.'
+    en: 'Completed a year of postgraduate studies in Arabic Language and Literature at the Lebanese University – Faculty of Arts and Humanities – Second Branch, Fanar.',
+    ar: 'تابع سنة دراسات عليا في اللغة العربيّة وآدابها في الجامعة اللبنانيّة – كليّة الآداب والعلوم الإنسانيّة – الفرع الثاني في الفنار.'
   },
   timeline_academic_location: {
-    en: 'Arkham, Massachusetts',
-    ar: 'أركام، ماساتشوستس'
+    en: 'Lebanese University – Faculty of Arts and Humanities – Second Branch, Fanar.',
+    ar: 'الجامعة اللبنانيّة – كليّة الآداب والعلوم الإنسانيّة – الفرع الثاني في الفنار.'
   },
   timeline_journey: {
-    en: 'The Great Journey',
-    ar: 'الرحلة العظيمة'
+    en: 'Launching an Educational Career',
+    ar: 'الانطلاق في العمل التربوي'
   },
   timeline_journey_desc: {
-    en: 'Traveled through the Carpathians, collecting local legends and drafting first manuscripts.',
-    ar: 'سافر عبر جبال الكاربات، وجمع الأساطير المحلية وصاغ المخطوطات الأولى.'
+    en: 'Began his educational career as an Arabic language teacher and coordinator at Saint George Secondary School – Ashash, Lebanese Maronite Order.',
+    ar: 'باشر العمل مدرّسًا ومنسّقًا للّغة العربيّة في ثانويّة مار جرجس – عشاش للرهبانيّة اللبنانيّة المارونيّة.'
   },
   timeline_journey_location: {
-    en: 'Carpathian Mountains',
-    ar: 'جبال الكاربات'
+    en: 'St. Georges School - Ashash, Lebanon',
+    ar: 'ثانويّة مار جرجس – عشاش للرهبانيّة اللبنانيّة المارونيّة'
   },
   timeline_publication: {
-    en: 'First Publication',
-    ar: 'النشر الأول'
+    en: 'Assuming a Cultural and Educational Role',
+    ar: 'تولّي منصب ثقافي تربوي'
   },
   timeline_publication_desc: {
-    en: 'Published "The Whispering Gallery" to critical acclaim and public unease.',
-    ar: 'نشر "معرض الهمس" وسط إشادة نقدية وقلق عام.'
+    en: 'Assumed the role of Secretary of the Cultural and Educational Association of Zgharta–Zawiya Schools.',
+    ar: 'تولّى أمانة سرّ الجمعيّة الثقافيّة التربويّة لمدارس زغرتا – الزاوية.'
   },
   timeline_publication_location: {
-    en: 'London, England',
-    ar: 'لندن، إنجلترا'
+    en: 'Cultural and Educational Association of Zgharta–Zawiya Schools.',
+    ar: 'جمعيّة الثقافة والتعليم لمدارس زغرتا – الزاوية.'
   },
   timeline_residence: {
-    en: 'Current Residence',
-    ar: 'الإقامة الحالية'
+    en: 'Serving as a Media Officer',
+    ar: 'مسؤول إعلامي لنقابة المعلّمين'
   },
   timeline_residence_desc: {
-    en: 'Resides in a repurposed lighthouse, writing by candlelight.',
-    ar: 'يقيم في منارة أعيد استخدامها، ويكتب على ضوء الشموع.'
+    en: 'Appointed Media Officer of the Teachers’ Syndicate – Northern Branch.',
+    ar: 'شغل منصب المسؤول الإعلامي لنقابة المعلّمين – فرع الشمال.'
   },
   timeline_residence_location: {
-    en: 'Maine Coast',
-    ar: 'ساحل مين'
+    en: 'Teachers’ Syndicate – Northern Branch.',
+    ar: 'نقابة المعلّمين – فرع الشمال.'
   },
 
+  timeline_syndicate: {
+    en: 'Conclusion of Syndicate Duties',
+    ar: 'ختام المهمّة النقابيّة'
+  },
+  timeline_syndicate_desc: {
+    en: 'Concluded his term as Media Officer of the Teachers’ Syndicate – Northern Branch.',
+    ar: 'أنهى مهامه كمسؤول إعلامي لنقابة المعلّمين – فرع الشمال.'
+  },
+  timeline_syndicate_location: {
+    en: 'Teachers’ Syndicate – Northern Branch.',
+    ar: 'نقابة المعلّمين – فرع الشمال.'
+  },
+
+  timeline_certificate: {
+    en: 'Academic Certificate of Appreciation',
+    ar: 'شهادة تقدير أكاديمية'
+  },
+  timeline_certificate_desc: {
+    en: 'Received a Certificate of Appreciation from the Holy Spirit University of Kaslik (USEK).',
+    ar: 'نال شهادة تقدير من جامعة الروح القدس – الكسليك.'
+  },
+  timeline_certificate_location: {
+    en: 'Holy Spirit University of Kaslik (USEK).',
+    ar: 'جامعة الروح القدس – الكسليك.'
+  },
+
+  timeline_recognition: {
+    en: 'National Artistic Recognition',
+    ar: 'تكريم وطني فني'
+  },
+  timeline_recognition_desc: {
+    en: 'Awarded a medal and commendation from the Minister of National Defense, Yaacoub Sarraf, for the song Our Soldiers Never Bow.',
+    ar: 'نال وسام وتنويه وزير الدفاع الوطني يعقوب الصرّاف عن أغنية عسكرنا ما بينحني.'
+  },
+  timeline_recognition_location: {
+    en: 'Minister of National Defense, Yaacoub Sarraf.',
+    ar: 'وزير الدفاع الوطني يعقوب الصرّاف'
+  },
+
+  timeline_commendation: {
+    en: 'Presidential Literary Commendation',
+    ar: 'تنويه رئاسي أدبي'
+  },
+  timeline_commendation_desc: {
+    en: 'Received a presidential commendation from President General Michel Aoun for his book Ink of Struggle.',
+    ar: 'نال تنويه رئيس الجمهوريّة العماد ميشال عون عن كتابه حبرُ النّضال.'
+  },
+  timeline_commendation_location: {
+    en: 'President General Michel Aoun.',
+    ar: 'رئيس الجمهوريّة العماد ميشال عون'
+  },
   // Books
 
   book_alchemists_daughter_title: {
@@ -190,16 +241,16 @@ const translations: Record<string, Record<Language, string>> = {
   },
 
   book_clockwork_heart_title: {
-    en: 'The Clockwork Heart',
-    ar: 'القلب الميكانيكي'
+    en: 'Shahqat Fikr',
+    ar: 'شهئة فكر'
   },
   book_clockwork_heart_desc: {
     en: 'A gothic romance interwoven with mechanical horror.',
     ar: 'رومانسية قوطية منسوجة مع رعب ميكانيكي.'
   },
   book_clockwork_heart_summary: {
-    en: 'In the gas-lit streets of Victorian London, a watchmaker discovers a mechanism that can beat forever—but at a terrible cost. When his beloved falls gravely ill, he must choose between her mortality and a clockwork existence. A gothic romance interwoven with mechanical horror, exploring the boundary between the soul and the machine. As gears turn and springs wind, the question remains: can love survive when the heart no longer beats with blood, but with brass and steam?',
-    ar: 'في شوارع لندن الفيكتورية المضاءة بالغاز، يكتشف صانع الساعات آلية يمكنها أن تنبض إلى الأبد—لكن بثمن فظيع. عندما تصاب حبيبته بمرض خطير، يجب عليه الاختيار بين فانيتها ووجود ميكانيكي. رومانسية قوطية منسوجة مع رعب ميكانيكي، تستكشف الحدود بين الروح والآلة. بينما تدور التروس وتلتف الينابيع، يبقى السؤال: هل يمكن للحب أن ينجو عندما لا يعود القلب ينبض بالدم، بل بالنحاس والبخار؟'
+    en:'A poetry collection written in the colloquial dialect that touches on the details of everyday life and the human inner world, delving into emotions of love and existential questions through a simple, heartfelt style. The poet blends popular emotional expression with deep philosophical reflection, offering vivid, metaphor-rich texts with a lyrical quality, a distinct poetic identity, and a profound exploration of humanity’s ongoing search for meaning in an ever-changing world.',
+    ar: 'ديوان شعري باللهجة المحكيّة يلامس تفاصيل الحياة اليوميّة والوجدان الإنساني، ويغوص في مشاعر الحبّ وتساؤلات الوجود بأسلوب بسيط وقريب إلى القلب. يمزج الشاعر بين العاطفة الشعبيّة والتأمّل الفلسفي العميق، مقدّمًا نصوصًا نابضة بالحياة، غنيّة بالمجاز، وقابلة للغنائيّة، تحمل هوية شعريّة متفرّدة وتعبّر عن بحث الإنسان الدائم عن المعنى في عالم متقلّب.'
   },
   book_clockwork_heart_genre: {
     en: 'Gothic Romance',

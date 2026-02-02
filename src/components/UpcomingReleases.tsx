@@ -27,10 +27,12 @@ export function UpcomingReleases() {
 
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="w-full md:w-1/3 flex justify-center">
-            <div className="w-40 h-56 border-2 border-dashed border-[#4a3f35] flex items-center justify-center bg-[#e6e2d3] group-hover:border-solid transition-all duration-300">
-              <span className="text-[#4a3f35] opacity-50 font-ornamental text-center px-4 text-sm">
-                {t('cover_pending')}
-              </span>
+            <div className="border-2 border-[#4a3f35] flex items-center justify-center bg-[#e6e2d3] group-hover:border-solid transition-all duration-300">
+            <img
+              src="/3.png"
+              alt={t('author_name')}
+              className="w-full h-full object-cover transition-all duration-500"
+            />
             </div>
           </div>
 

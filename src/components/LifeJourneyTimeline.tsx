@@ -10,35 +10,61 @@ export function LifeJourneyTimeline() {
   const { t, language } = useLanguage();
   const events: TimelineEvent[] = [
     {
-      year: '1892',
+      year: '1990',
       title: t('timeline_beginning'),
       description: t('timeline_beginning_desc'),
       location: t('timeline_beginning_location')
     },
     {
-      year: '1910',
+      year: '1993',
       title: t('timeline_academic'),
       description: t('timeline_academic_desc'),
       location: t('timeline_academic_location')
     },
     {
-      year: '1919',
+      year: '2001',
       title: t('timeline_journey'),
       description: t('timeline_journey_desc'),
       location: t('timeline_journey_location')
     },
     {
-      year: '1924',
+      year: '2002',
       title: t('timeline_publication'),
       description: t('timeline_publication_desc'),
       location: t('timeline_publication_location')
     },
     {
-      year: '1938',
+      year: '2005',
       title: t('timeline_residence'),
       description: t('timeline_residence_desc'),
       location: t('timeline_residence_location')
-    }];
+    },
+    {
+      year: '2009',
+      title: t('timeline_syndicate'),
+      description: t('timeline_syndicate_desc'),
+      location: t('timeline_syndicate_location')
+    },
+    {
+      year: '2015',
+      title: t('timeline_certificate'),
+      description: t('timeline_certificate_desc'),
+      location: t('timeline_certificate_location')
+    },
+    {
+      year: '2018',
+      title: t('timeline_recognition'),
+      description: t('timeline_recognition_desc'),
+      location: t('timeline_recognition_location')
+    },
+    {
+      year: '2019',
+      title: t('timeline_commendation'),
+      description: t('timeline_commendation_desc'),
+      location: t('timeline_commendation_location')
+    } 
+  
+  ];
 
   return (
     <div className="relative py-12 px-4 max-w-3xl mx-auto">
