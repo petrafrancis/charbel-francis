@@ -18,7 +18,7 @@ export function BiographySection() {
       <div className={`flex justify-center mb-8 ${language === 'ar' ? 'md:float-left md:mr-8 md:ml-0' : 'md:float-right md:ml-8 md:mr-0'} md:w-64 md:mb-4`}>
         <div className="relative w-48 h-48 md:w-64 md:h-64">
           {/* Decorative Frame */}
-          <div className="absolute inset-0 border-4 border-[#8b7355] border-opacity-90 rounded-full pointer-events-none z-20">
+          <div className="absolute inset-0 border-2 border-[#8b7355] border-opacity-80 rounded-full pointer-events-none z-20">
             {/* Inner frame */}
             {/* Corner decorations */}
             </div>
@@ -28,7 +28,7 @@ export function BiographySection() {
             <img
               src={authorImageUrl}
               alt={t('author_name')}
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+              className="w-full h-full object-cover"
             />
             {/* Subtle overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#8b7355]/10 to-transparent"></div>

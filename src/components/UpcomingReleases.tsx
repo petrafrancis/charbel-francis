@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 export function UpcomingReleases() {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, direction } = useLanguage();
   return (
-    <section className="max-w-4xl mx-auto px-6 py-12">
+    <section dir={direction} className="max-w-4xl mx-auto px-6 py-12">
       <div
         onClick={() => navigate('/book/clockwork-heart')}
         className="relative border-4 border-double border-[#8b7355] p-8 md:p-12 bg-[#f9f7f1] shadow-inner cursor-pointer group transition-all duration-300 hover:shadow-lg hover:border-[#8b2e2e]">
@@ -36,7 +36,7 @@ export function UpcomingReleases() {
             </div>
           </div>
 
-          <div className="w-full md:w-2/3 text-center md:text-left">
+          <div className="w-full md:w-2/3 text-center md:text-start">
             <h3 className="text-2xl font-bold text-[#4a3f35] mb-3 font-manuscript uppercase tracking-wide group-hover:text-[#8b2e2e] transition-colors">
               {t('book_clockwork_heart_title')}
             </h3>
@@ -47,7 +47,7 @@ export function UpcomingReleases() {
             <div className="inline-flex items-center gap-2 text-[#8b2e2e] font-manuscript italic border-b border-[#8b2e2e] border-opacity-50 group-hover:border-opacity-100 transition-all">
               <span>{t('click_to_read_more')}</span>
               <svg
-                className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                className="w-4 h-4 transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform rtl:rotate-180"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24">
