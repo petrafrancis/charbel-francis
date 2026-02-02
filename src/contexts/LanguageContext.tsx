@@ -35,7 +35,7 @@ const translations: Record<string, Record<Language, string>> = {
     ar: 'عرض المزيد'
   },
 
-  // Headers & Titles
+  /// Headers & Titles
   manuscript_subtitle: {
     en: 'The Poet and Writer',
     ar: 'الشّاعر والأديب'
