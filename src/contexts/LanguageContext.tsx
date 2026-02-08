@@ -22,10 +22,6 @@ const translations: Record<string, Record<Language, string>> = {
     en: 'Back to Home',
     ar: 'العودة إلى الصفحة الرئيسية'
   },
-  view_events: {
-    en: 'View Events & Appearances',
-    ar: 'عرض الفعاليات والمشاركات'
-  },
   click_to_read_more: {
     en: 'Click to read more',
     ar: 'انقر للقراءة المزيد'
@@ -276,28 +272,6 @@ const translations: Record<string, Record<Language, string>> = {
   book_signed_copies: {
     en: 'Signed copies of this edition will be available at the upcoming autumn gala.',
     ar: 'ستكون نسخ موقعة من هذه الطبعة متاحة في الحفل الخريفي القادم.'
-  },
-
-  // Events
-  events_title: {
-    en: 'Events & Appearances',
-    ar: 'الفعاليات والمشاركات'
-  },
-  events_subtitle: {
-    en: 'Literary Engagements',
-    ar: 'المشاركات الأدبية'
-  },
-  events_description: {
-    en: 'A chronicle of literary gatherings, readings, and scholarly discourse spanning the years of authorship.',
-    ar: 'سجل للتجمعات الأدبية والقراءات والخطاب العلمي عبر سنوات التأليف.'
-  },
-  view_all_events: {
-    en: 'View All Events',
-    ar: 'عرض جميع الفعاليات'
-  },
-  events_preview_text: {
-    en: 'Explore a chronicle of literary gatherings, readings, and scholarly discourse that have shaped the author\'s journey through the years.',
-    ar: 'استكشف سجل الفعاليات الأدبية والقراءات والمشاركات التي شكلت مسيرة المؤلف عبر السنوات.'
   },
 
   // Footer

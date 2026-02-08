@@ -4,7 +4,6 @@ import { ManuscriptHeader } from '../components/ManuscriptHeader';
 import { BiographySection } from '../components/BiographySection';
 import { BooksSection } from '../components/BooksSection';
 import { UpcomingReleases } from '../components/UpcomingReleases';
-import { EventsPreview } from '../components/EventsPreview';
 import { OrnamentalDivider } from '../components/OrnamentalDivider';
 import { LifeJourneyTimeline } from '../components/LifeJourneyTimeline';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -37,18 +36,14 @@ export function AuthorPage() {
 
           <BooksSection />
 
-          <OrnamentalDivider variant="complex" />
-
-          <EventsPreview />
-
           <OrnamentalDivider variant="end" />
 
           {/* Footer */}
           <footer className="text-center text-[#6d5a43] text-sm font-manuscript mt-8 opacity-70">
             <p>
-              &copy; MDCCCCXXXVIII Arthur V. Blackwood. {t('rights_reserved')}
+              &copy; Charbel Francis {t('rights_reserved')}
             </p>
-            <p className="mt-2 text-xs">{t('typeset')}</p>
+            
           </footer>
         </div>
       </div>
