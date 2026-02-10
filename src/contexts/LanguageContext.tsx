@@ -13,7 +13,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 );
 // Comprehensive translation dictionary
 const translations: Record<string, Record<Language, string>> = {
-  // Navigation & Common
+  // Navigation & Common.
   back_to_collection: {
     en: 'Back to Collection',
     ar: 'العودة إلى المجموعة'
