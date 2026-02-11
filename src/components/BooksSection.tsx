@@ -20,7 +20,7 @@ export function getBooksData(t: (key: string) => string, language: 'en' | 'ar'):
   return [
     
     {
-      id: 'clockwork-heart',
+      id: 'shahqat-fikr',
       titleKey: 'book_clockwork_heart_title',
       year: 'MDCCCCXXXVIII',
       color: 'brown',
@@ -33,7 +33,7 @@ export function getBooksData(t: (key: string) => string, language: 'en' | 'ar'):
       isFeatured: true
     },
     {
-      id: 'alchemists-daughter',
+      id: 'sada-al-wijdan',
       titleKey: 'book_alchemists_daughter_title',
       year: 'MDCCCCXXXI',
       color: 'green',
@@ -44,7 +44,7 @@ export function getBooksData(t: (key: string) => string, language: 'en' | 'ar'):
       imageUrl: '/2.png'
     },
     {
-      id: 'echoes-void',
+      id: 'hibr-al-nidal',
       titleKey: 'book_echoes_void_title',
       year: 'MDCCCCXXXV',
       color: 'brown',
