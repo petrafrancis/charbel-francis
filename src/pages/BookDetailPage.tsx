@@ -103,22 +103,8 @@ export function BookDetailPage() {
                 <p className={language === 'ar' ? 'first-letter:text-5xl first-letter:font-ornamental first-letter:text-[#8b2e2e] first-letter:float-right first-letter:ml-3 first-letter:mt-[-8px]' : 'first-letter:text-5xl first-letter:font-ornamental first-letter:text-[#8b2e2e] first-letter:float-left first-letter:mr-3 first-letter:mt-[-8px]'}>
                   {t(book.summaryKey)}
                 </p>
-                <p className="mt-4">
-                  {t('book_critics_note')}
-                </p>
+               
               </div>
-
-              {book.isFeatured &&
-                <div className="mt-12 p-6 bg-[#d4af37] bg-opacity-10 border border-[#d4af37] rounded-sm relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-16 h-16 bg-[#d4af37] opacity-20 transform rotate-45 translate-x-8 -translate-y-8"></div>
-                  <h4 className="text-[#8b2e2e] font-ornamental text-lg mb-2 flex items-center gap-2">
-                    <span>★</span> {t('featured_event')}
-                  </h4>
-                  <p className="text-[#4a3f35] font-manuscript italic">
-                    {t('book_signed_copies')}
-                  </p>
-                </div>
-              }
             </div>
           </div>
         </div>

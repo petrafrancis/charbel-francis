@@ -40,7 +40,7 @@ export function getBooksData(t: (key: string) => string, language: 'en' | 'ar'):
       descriptionKey: 'book_alchemists_daughter_desc',
       summaryKey: 'book_alchemists_daughter_summary',
       genreKey: 'book_alchemists_daughter_genre',
-      releaseDate: language === 'ar' ? '13 شباط 2022' : 'February 13, 2022',
+      releaseDate: language === 'ar' ? '13 شباط 2024' : 'February 13, 2024',
       imageUrl: '/2.png'
     },
     {
