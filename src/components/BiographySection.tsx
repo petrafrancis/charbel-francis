@@ -4,7 +4,7 @@ export function BiographySection() {
   const { t, language } = useLanguage();
   const firstLetter = language === 'ar' ? 'ش' : 'C';
   // Author image URL - replace with actual author image
-  const authorImageUrl = '/image.png';
+  const authorImageUrl = '/charbel.jpeg';
 
   return (
     <section className="relative max-w-3xl mx-auto px-8 py-12">
