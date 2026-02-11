@@ -7,7 +7,7 @@ export function UpcomingReleases() {
   return (
     <section dir={direction} className="max-w-4xl mx-auto px-6 py-12">
       <div
-        onClick={() => navigate('/book/clockwork-heart')}
+        onClick={() => navigate('/book/shahqat-fikr')}
         className="relative border-4 border-double border-[#8b7355] p-8 md:p-12 bg-[#f9f7f1] shadow-inner cursor-pointer group transition-all duration-300 hover:shadow-lg hover:border-[#8b2e2e]">
 
         {/* Corner Decorations */}
