@@ -274,7 +274,7 @@ One poet described it as a collection throbbing with emotion, enfolding an oasis
 
 Some critics described it as a living memory and a faithful guardian of the suffering Lebanon endured during this period of tutelage, serving as a reference to draw lessons so that mistakes are not repeated—since nations that repeat their errors cannot progress. Others considered it an honest mirror showing how the national struggle transformed into a daily prayer under occupation.`,
     
-    ar: `مقالات سياسيّة وأشعار ومُقتطفات من مقالات رُتّبت في سياق زمني لتكون شاهدة على فترة من الوصاية الخارجيّة التي عاشها لبنان منذ عام 1990. يتناول فيه الكاتب عن طريق التأريخ والتحليل أهمّ المحطّات التي عاشها لبنان، وينقل مشاهد يوميّة مؤلمة تؤرّخ للأحداث، وتشهد على سلطة باعت قرار لبنان للخارج، وعاثت في مؤسّسات الدولة فسادًا، حتّى وصلت بالوطن إلى الانهيلر التّام.
+    ar: `مقالات سياسيّة وأشعار ومُقتطفات من مقالات رُتّبت في سياق زمني لتكون شاهدة على فترة من الوصاية الخارجيّة التي عاشها لبنان منذ عام 1990. يتناول فيه الكاتب عن طريق التأريخ والتحليل أهمّ المحطّات التي عاشها لبنان، وينقل مشاهد يوميّة مؤلمة تؤرّخ للأحداث، وتشهد على سلطة باعت قرار لبنان للخارج، وعاثت في مؤسّسات الدولة فسادًا، حتّى وصلت بالوطن إلى الانهيار التّام.
 
 وصفه بعض النّقاد بأنّه ذاكرة حيّة، وحافظة أمينة للمعاناة التي عاشها لبنان في فترة الوصاية، يمكن الركون إليه لاستخلاص العِبر، كي لا نُكرّر أخطاءنا، فالشعوب التي تُكرّر أخطاءها لا يمكنها أن تتقدّم. كما اعتبره البعض الآخر مرآةً صادقة لكيفيّة تحوّل النضال الوطني إلى صلاة يوميّة في ظلّ الاحتلال.`
   },  
