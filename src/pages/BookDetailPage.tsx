@@ -100,10 +100,22 @@ export function BookDetailPage() {
                 <h3 className="text-xl font-ornamental text-[#8b2e2e] mb-4">
                   {t('summary')}
                 </h3>
-                <p className={language === 'ar' ? 'first-letter:text-5xl first-letter:font-ornamental first-letter:text-[#8b2e2e] first-letter:float-right first-letter:ml-3 first-letter:mt-[-8px]' : 'first-letter:text-5xl first-letter:font-ornamental first-letter:text-[#8b2e2e] first-letter:float-left first-letter:mr-3 first-letter:mt-[-8px]'}>
-                  {t(book.summaryKey)}
-                </p>
-               
+                {t(book.summaryKey)
+                  .split(/\n\n+/)
+                  .map((paragraph, i) => (
+                    <p
+                      key={i}
+                      className={
+                        i === 0
+                          ? language === 'ar'
+                            ? 'first-letter:text-5xl first-letter:font-ornamental first-letter:text-[#8b2e2e] first-letter:float-right first-letter:ml-3 first-letter:mt-[-8px] mb-4'
+                            : 'first-letter:text-5xl first-letter:font-ornamental first-letter:text-[#8b2e2e] first-letter:float-left first-letter:mr-3 first-letter:mt-[-8px] mb-4'
+                          : 'mb-4'
+                      }
+                    >
+                      {paragraph.trim()}
+                    </p>
+                  ))}
               </div>
             </div>
           </div>
