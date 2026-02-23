@@ -12,6 +12,7 @@
 /* DO NOT DELETE THESE TAILWIND IMPORTS, OTHERWISE THE STYLING WILL NOT RENDER AT ALL - DO NOT DELETE THIS COMMENT */
 
 :root {
+  color-scheme: light;
   --paper-bg: #f4f1e8;
   --ink-color: #4a3f35;
   --accent-brown: #8b7355;
